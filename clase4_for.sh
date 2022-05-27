@@ -1,10 +1,6 @@
 #!/bin/bash
-dividendo=$1
-divisor=$2
-cambio=$3
-until [ "${dividendo}" -gt "100" ]
+for i in $1 
 do
-    x=$dividendo/$divisor
-    echo "la division es $dividendo sobre $divisor es $x"
-    dividendo=$(( dividendo+$cambio ))
+    x= wc $i 
+    echo "archivo: $i, fila: $x"
 done
